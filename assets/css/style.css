@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    --background-primary-color: #ffffff;
+    --font-secondary-color: #00000080;
+    --azul-botoes: #2474e4;
+    --preto-05: #f5f5f5;
+    --preto-50: #a2a2a2;
+    --preto-100: #464646;
+    --azul-10: #eaf2fd;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'raleway';
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--preto-100);
+    background-color: var(--background-primary-color);
+}
+
+h1 {
+    font-size: 5.2rem;
+    margin-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--azul-botoes);
+    font-weight: 700;
+}
+
+@media screen and (min-width:1440px) {
+    .container {
+        padding: 0 calc(100% - 1136px)/2;
+    }
+}
+
+
+
+
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 15vh;
+    padding: 0 12rem;
+}
+
+/* .cabecalho__logo {
+
+}
+ */
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+    width: 400px;
+    height: 40px;
+    padding: 0 1em;
+    margin-left: 2.5em;
+
+    border-radius: 20px;
+    background-color: #f5f5f5;
+}
+
+.cabecalho__pesquisa--input {
+    width: 100%;
+    background-color: var(--preto-05);
+    font-size: 1.4rem;
+}
+
+.cabecalho__pesquisa--input:focus-visible {
+    outline: none;
+}
+
+.cabecalho__pesquisa--icone {
+    color: var(--font-secondary-color);
+}
+
+.cabecalho__login {
+    border: solid 1px var(--azul-botoes);
+    padding: 1rem 5rem;
+    
+    color: var(--azul-botoes);
+    font-weight: 400;
+}
+
+
+
+.banner {
+    background: url('../images/banner.jpg') no-repeat center/cover;
+    color: #fff;
+    
+    height: 28rem;
+    padding: 3.2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.banner__titulo {
+    font-weight: 700;
+}
+
+.banner__descricao {
+    font-weight: 700;
+}
+
+.banner__botao {
+    width: fit-content;
+    padding: 1.6rem;
+
+    background-color: var(--azul-botoes);
+    font-weight: 400;
+}
+
+
+
+
+.principal {
+    padding: 6.4rem 12rem;
+}
+
+.secao {
+    margin-bottom: 6.4rem;
+}
+
+.secao-up {
+    margin-bottom: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secao-up__titulo {
+    margin-bottom: 0;
+}
+
+.secao-up__link {
+    display: flex;
+    align-items: center;
+
+}
+
+.secao-produtos {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.produto {
+    display: grid;
+    gap: 0.8rem;
+}
+
+
+
+.saiba-mais {
+    background-color: var(--azul-10);
+    display: flex;
+    justify-content: space-between;
+    padding: 6.4rem 12rem;
+}
+
+.saiba-mais__container {
+    width:auto;
+}
+
+.navegacao {
+    display: grid;
+    gap: 2.4rem;
+}
+
+.navegacao__link {
+    color: var(--preto-50);
+    font-weight: 500;
+}
+
+
+.contato {
+    width: 100%;
+    display: grid;
+    gap: 0.8rem
+}
+
+.contato__nome, .contato__mensagem {
+    border-radius: .4rem;
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.contato__botao {
+    font-weight: 400;
+    width: fit-content;
+    height: 5rem;
+    padding: 1.6rem;
+    
+    background-color: var(--azul-botoes);
+    color: var(--background-primary-color)
+}
+
+
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.2rem 0;
+}
