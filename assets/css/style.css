@@ -5,7 +5,7 @@
     --font-secondary-color: #00000080;
     --azul-botoes: #2474e4;
     --preto-05: #f5f5f5;
-    --preto-50: #a2a2a2;
+    --preto-50: #a2a2a2a2;
     --preto-100: #464646;
     --azul-10: #eaf2fd;
     font-size: 10px;
@@ -25,7 +25,8 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
     margin-bottom: 1.6rem;
 }
 
@@ -48,9 +49,37 @@ a {
     font-weight: 700;
 }
 
-@media screen and (min-width:1440px) {
+.material-symbols-outlined {
+    font-size: 2rem;
+}
+
+.container {
+    padding: 0 calc((100% - 90vw)/2);
+}
+
+@media screen and (min-width: 768px) {
     .container {
-        padding: 0 calc(100% - 1136px)/2;
+        padding: 0 calc((100% - 753px)/2);
+    }
+
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 calc((100% - 945px)/2);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 calc((100% - 1136px)/2);
     }
 }
 
@@ -62,66 +91,101 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    height: 15vh;
-    padding: 0 12rem;
+    height: 72px;
 }
 
-/* .cabecalho__logo {
-
-}
- */
-
-.cabecalho__container {
+.link__home {
     display: flex;
-    align-items: center;
+    justify-content: start;
+}
+
+.cabecalho__logo {
+    height: 3.5rem;
 }
 
 .cabecalho__pesquisa {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    
-    width: 400px;
-    height: 40px;
-    padding: 0 1em;
-    margin-left: 2.5em;
-
-    border-radius: 20px;
-    background-color: #f5f5f5;
-}
-
-.cabecalho__pesquisa--input {
-    width: 100%;
-    background-color: var(--preto-05);
-    font-size: 1.4rem;
-}
-
-.cabecalho__pesquisa--input:focus-visible {
-    outline: none;
-}
-
-.cabecalho__pesquisa--icone {
-    color: var(--font-secondary-color);
+    display: none;
 }
 
 .cabecalho__login {
     border: solid 1px var(--azul-botoes);
-    padding: 1rem 5rem;
+    padding: 1.2rem clamp(1rem, 10vw, 5rem);
     
     color: var(--azul-botoes);
     font-weight: 400;
 }
 
+/* .cabecalho__pesquisa--icone-mobile {
+    margin-left: 2rem;
+} */
+
+@media screen and (min-width: 768px) {
+    .cabecalho__logo-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-right: 13vw;
+    }
+    
+    .cabecalho__logo {
+        width: fit-content;
+    }
+    
+    .cabecalho__pesquisa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        
+        width: 100%;
+        height: 40px;
+        padding: 0 1em;
+        margin-left: 2.5em;
+    
+        border-radius: 20px;
+        background-color: #f5f5f5;
+    }
+    
+    .cabecalho__pesquisa--input {
+        width: 100%;
+        background-color: var(--preto-05);
+        font-size: 1.4rem;
+    }
+    
+    .cabecalho__pesquisa--input:focus-visible {
+        outline: none;
+    }
+    
+    .cabecalho__pesquisa--icone {
+        color: var(--font-secondary-color);
+    }
+
+    .cabecalho__pesquisa--icone-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        height: 13vh;
+    }
+
+    .cabecalho__logo {
+        height: 7vh;
+    }
+}
+
 
 
 .banner {
-    background: url('../images/banner.jpg') no-repeat center/cover;
+    background-image: linear-gradient(#0000 40%, #0009 100%), url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #fff;
     
     height: 28rem;
-    padding: 3.2rem 12rem;
+    padding-bottom: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -129,10 +193,11 @@ a {
 
 .banner__titulo {
     font-weight: 700;
+    font-size: 3.2rem;
 }
 
 .banner__descricao {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .banner__botao {
@@ -143,15 +208,31 @@ a {
     font-weight: 400;
 }
 
+@media screen and (min-width: 768px) {
+    .banner {
+        padding-bottom: 3.2rem;
+    }
+
+    .banner__titulo {
+        font-size: 5.2rem;
+    }
+
+    .banner__descricao {
+        font-weight: 700;
+    }
+}
+
+
+
 
 
 
 .principal {
-    padding: 6.4rem 12rem;
+    padding-top: 1.6rem;
 }
 
 .secao {
-    margin-bottom: 6.4rem;
+    margin-bottom: 3.2rem;
 }
 
 .secao-up {
@@ -169,39 +250,116 @@ a {
 .secao-up__link {
     display: flex;
     align-items: center;
-
+    font-size: 1.4rem;
 }
 
 .secao-produtos {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     gap: 1.6rem;
 }
 
 .produto {
     display: grid;
     gap: 0.8rem;
+    overflow: hidden;
 }
+
+.produto:nth-last-child(-n+2) {
+    display: none;
+}
+
+.produto__imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto__preco {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .secao-produtos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .produto:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .produto:nth-child(1) {
+        justify-self: start;
+    }
+
+    .produto:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .principal {
+        padding-top: 3.2rem;
+    }
+
+    .secao {
+        margin-bottom: 6.4rem;
+    }
+    
+    .secao-up__link {
+        font-size: 1.6rem;
+    }
+
+    .secao-produtos {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .principal {
+        padding-top: 6.4rem;
+    }
+
+    .produto:nth-last-child(-n+1) {
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .produto:nth-last-child(-n+2) {
+        display: grid;
+    }
+}
+
 
 
 
 .saiba-mais {
     background-color: var(--azul-10);
-    display: flex;
-    justify-content: space-between;
-    padding: 6.4rem 12rem;
+    display: grid;
+    row-gap: 2rem;
+    padding-top: 3.2rem;
+    padding-bottom: 6.4rem;
 }
 
 .saiba-mais__container {
     width:auto;
+    display: grid;
+}
+
+.rodape__logo {
+    justify-self: center;
 }
 
 .navegacao {
     display: grid;
     gap: 2.4rem;
+    text-align: center;
 }
 
 .navegacao__link {
-    color: var(--preto-50);
+    color: var(--preto-100);
     font-weight: 500;
 }
 
@@ -209,23 +367,82 @@ a {
 .contato {
     width: 100%;
     display: grid;
-    gap: 0.8rem
+    gap: 0.8rem;
+    position: relative;
+    margin-top: 1.6rem;
+}
+
+.contato__titulo {
+    font-weight: 700;
 }
 
 .contato__nome, .contato__mensagem {
     border-radius: .4rem;
-    padding: 1.2rem;
-    width: 100%;
+    padding: 1rem;
+    width: auto;
+    box-sizing: border-box;
+    border-bottom: solid 2px var(--preto-50)
+}
+
+.contato__nome {
+    height: 5.6rem;
+}
+
+.contato__mensagem {
+    height: 8.2rem;
+    resize: vertical;
 }
 
 .contato__botao {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 14px;
     width: fit-content;
     height: 5rem;
     padding: 1.6rem;
     
     background-color: var(--azul-botoes);
-    color: var(--background-primary-color)
+    color: var(--background-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .saiba-mais {
+        padding-top: 6.4rem;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-areas: 
+        'logo contato contato'
+        'links contato contato';
+    }
+
+    .grid-logo {
+        grid-area: logo;
+    }
+
+    .grid-links {
+        grid-area: links;
+    }
+
+    .grid-contato {
+        grid-area: contato;
+    }
+
+    .rodape__logo {
+        justify-self: start;
+    }
+
+    .navegacao {
+        text-align: start;
+    }
+
+    .contato {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .saiba-mais {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'logo links contato contato';
+    }
 }
 
 
@@ -236,4 +453,5 @@ a {
     align-items: center;
     justify-content: center;
     padding: 3.2rem 0;
+    font-weight: 500;
 }
