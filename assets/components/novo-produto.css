@@ -1,0 +1,10 @@
+.novo-produto {
+    display: grid;
+    gap: 1.6rem;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.novo-produto__botao {
+    width: 100%;
+}

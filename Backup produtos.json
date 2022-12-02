@@ -1,0 +1,148 @@
+{
+    "produtos":[
+      {
+        "id": 1,
+        "nome":"Caneca stroomer trooper", 
+        "preco":"R$ 60,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_1.png",
+        "categoria": "Star Wars",
+        "descricao": "Caneca estilizada, temática star wars."
+      },
+      {
+        "id": 2,
+        "nome":"Pedestal Darth vader", 
+        "preco":"R$ 120,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_2.png",
+        "categoria": "Star Wars",
+        "descricao": "temática star wars."
+      },
+      {
+        "id": 3,
+        "nome":"Boneco Yoda", 
+        "preco":"R$ 150,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_3.png",
+        "categoria": "Star Wars",
+        "descricao": ""
+      },
+      {
+        "id": 4,
+        "nome":"Boneco Stoomer trooper", 
+        "preco":"R$ 300,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_4.png",
+        "categoria": "Star Wars",
+        "descricao": ""
+      },
+      {
+        "id": 5,
+        "nome":"Boneco baby Yoda", 
+        "preco":"R$ 250,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_5.png",
+        "categoria": "Star Wars",
+        "descricao": ""
+      },
+      {
+        "id": 6,
+        "nome":"Boneco kylo ren", 
+        "preco":"R$ 350,00", 
+        "imagem_icone_src": "../images/produtos_star-wars_6.png",
+        "categoria": "Star Wars",
+        "descricao": ""
+      },
+      {
+        "id": 7,
+        "nome":"Controle Xbox", 
+        "preco":"R$ 400,00", 
+        "imagem_icone_src": "../images/produtos_consoles_1.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 8,
+        "nome":"Playstation 5", 
+        "preco":"R$ 4.500,00", 
+        "imagem_icone_src": "../images/produtos_consoles_2.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 9,
+        "nome":"Nintendo Old", 
+        "preco":"R$ 700,00", 
+        "imagem_icone_src": "../images/produtos_consoles_3.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 10,
+        "nome":"Nintendo Switch", 
+        "preco":"R$ 1.900,00", 
+        "imagem_icone_src": "../images/produtos_consoles_4.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 11,
+        "nome":"Xbox series X", 
+        "preco":"R$ 3.700,00", 
+        "imagem_icone_src": "../images/produtos_consoles_5.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 12,
+        "nome":"Gameboy Old", 
+        "preco":"R$ 500,00", 
+        "imagem_icone_src": "../images/produtos_consoles_6.png",
+        "categoria": "Consoles",
+        "descricao": ""
+      },
+      {
+        "id": 13,
+        "nome":"Camisa Atari", 
+        "preco":"R$ 60,00", 
+        "imagem_icone_src": "../images/produtos_diversos_1.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      },
+      {
+        "id": 14,
+        "nome":"Camisa controle Old", 
+        "preco":"R$ 60,00", 
+        "imagem_icone_src": "../images/produtos_diversos_2.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      },
+      {
+        "id": 15,
+        "nome":"Boneco sonic", 
+        "preco":"R$ 80,00", 
+        "imagem_icone_src": "../images/produtos_diversos_3.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      },
+      {
+        "id": 16,
+        "nome":"Despertador vintage", 
+        "preco":"R$ 100,00", 
+        "imagem_icone_src": "../images/produtos_diversos_4.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      },
+      {
+        "id": 17,
+        "nome":"Camisa big hamburguer", 
+        "preco":"R$ 60,00", 
+        "imagem_icone_src": "../images/produtos_diversos_5.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      },
+      {
+        "id": 18,
+        "nome":"Pikachu de pelúcia gigante", 
+        "preco":"R$ 1.500,00", 
+        "imagem_icone_src": "../images/produtos_diversos_6.png",
+        "categoria": "Diversos",
+        "descricao": ""
+      }
+    ]
+  }

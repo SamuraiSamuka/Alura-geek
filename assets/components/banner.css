@@ -1,0 +1,40 @@
+.banner {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    height: 21rem;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.195) 40%, #0009 100%), url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.banner__titulo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.banner__sub-titulo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__titulo {
+        font-size: 5.2rem;
+    }
+
+    .banner__sub-titulo {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: .05rem;
+    }
+
+    .banner__descricao {
+        font-weight: 700;
+    }
+}

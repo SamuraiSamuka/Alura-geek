@@ -1,0 +1,33 @@
+.cabecalho__login {
+    visibility: hidden;
+}
+
+.login {
+    display: grid;
+    max-width: 28rem;
+    margin: 6rem auto;
+    row-gap: 1.6rem;
+    text-align: center;
+}
+
+.login__email, .login__senha {
+    padding: .8rem 1.2rem;
+}
+
+.login__email__input, .login__senha__input {
+    margin: 0;
+}
+
+.login__botao {
+    justify-self: center;
+}
+
+@media screen and (min-width: 1024px) { 
+    .login {
+        max-width: 42rem;
+    }
+
+    .login__botao {
+        width: 100%;
+    }
+}

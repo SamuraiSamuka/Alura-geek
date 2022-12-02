@@ -1,0 +1,88 @@
+.saiba-mais {
+    background-color: var(--azul-10);
+    display: grid;
+    row-gap: 2rem;
+}
+
+.saiba-mais__container {
+    width:auto;
+    display: grid;
+}
+
+.saiba-mais__logo {
+    justify-self: center;
+}
+
+.saiba-mais__nav {
+    display: grid;
+    gap: 2.4rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.saiba-mais__nav__link {
+    color: var(--preto-100);
+    font-weight: 500;
+}
+
+.saiba-mais__contato {
+    width: 100%;
+    display: grid;
+    gap: 0.8rem;
+    position: relative;
+    margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .saiba-mais {
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-areas: 
+        'logo saiba-mais__contato saiba-mais__contato'
+        'links saiba-mais__contato saiba-mais__contato';
+    }
+
+    .grid-logo {
+        grid-area: logo;
+    }
+
+    .grid-links {
+        grid-area: links;
+    }
+
+    .grid-contato {
+        grid-area: saiba-mais__contato;
+        align-items: flex-start;
+    }
+
+    .saiba-mais__logo {
+        justify-self: start;
+    }
+
+    .saiba-mais__nav {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .saiba-mais {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'logo links saiba-mais__contato saiba-mais__contato';
+    }
+
+    .saiba-mais__contato {
+        margin-top: 0;
+    }
+}
+
+
+
+.sobre {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    font-weight: 500;
+}
