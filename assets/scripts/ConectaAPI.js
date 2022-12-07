@@ -3,6 +3,18 @@ async function getProdutos() {
     return await response.json()
 }
 
+async function getProduto(produtoId) {
+    const resposta = await fetch(`http://localhost:3000/produtos?id=${produtoId}`)
+    const produto = await resposta.json()
+    return produto[0]
+}
+
+async function queryProduto(termo) {
+    const resposta = await fetch(`http://localhost:3000/produtos?q=${termo}`)
+    const produtos = await resposta.json()
+    return produtos
+}
+
 async function postProduto(id, nome, preco, imagem_icone_src, imagem_hd_src, categoria, descricao) {
     const conexao = await fetch('http://localhost:3000/produtos', {
         method:"POST",
@@ -27,5 +39,7 @@ async function postProduto(id, nome, preco, imagem_icone_src, imagem_hd_src, cat
 
 export const conectaAPI = {
     getProdutos,
+    getProduto,
+    queryProduto,
     postProduto
 }
